@@ -1,5 +1,6 @@
 # Import python packages
 import streamlit as st
+conn = st.connection("connections.snowflake", type="snowflake")
 from snowflake.snowpark.functions import col
 
 # Write directly to the app
